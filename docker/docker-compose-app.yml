@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+    env-docker:
+        build: 
+            dockerfile: ./python.Dockerfile
+            context: .
+        container_name: env-docker
+        volumes:
+            - ./../script:/usr/src/myapp
+        networks:
+            - default
+        ports:
+            - 8888:8888
+
+volumes:
+    persistent:

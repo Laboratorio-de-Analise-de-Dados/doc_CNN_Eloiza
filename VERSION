@@ -1,0 +1,15 @@
+# Versionamento semântico
+
+– 0 (Major) – controle de compatibilidade.
+
+– 0 (Minor) – controle de funcionalidade.
+
+– 0 (Patch) – controle de correção de bugs.
+
+– Pré-release – versão candidata.
+
+# Iniciando o ambiente em Python com Docker
+0.0.0
+
+# Inserindo arquivos de configuração do JupyterLab no python.Dockerfile
+0.1.0

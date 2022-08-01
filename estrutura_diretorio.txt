@@ -1,0 +1,23 @@
+.
+├── LICENSE
+├── README.md
+├── VERSION
+├── atualiza_docker.sh
+├── commit_git.sh
+├── config.sh
+├── docker
+│   ├── JupyterLab-configs
+│   │   ├── plugin.jupyterlab-settings
+│   │   ├── themes.jupyterlab-settings
+│   │   └── tracker.jupyterlab-settings
+│   ├── docker-compose-app.yml
+│   ├── python.Dockerfile
+│   └── python_req.txt
+├── estrutura_diretorio.txt
+└── script
+    ├── start-nb
+    │   └── start-test.ipynb
+    └── start-py
+        └── main.py
+
+5 directories, 15 files
