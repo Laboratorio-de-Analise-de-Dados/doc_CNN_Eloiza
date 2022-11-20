@@ -1,5 +1,5 @@
 Flask==2.1.1
-joblib==1.1.0
+joblib==1.2.0
 jupyter==1.0.0
 jupyterlab==3.4.3
 Keras==2.4.3
