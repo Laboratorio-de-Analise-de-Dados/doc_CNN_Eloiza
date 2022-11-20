@@ -15,9 +15,953 @@
 │   └── python_req.txt
 ├── estrutura_diretorio.txt
 └── script
-    ├── start-nb
-    │   └── start-test.ipynb
-    └── start-py
-        └── main.py
+    ├── Classificação_imagens_PyCaret_03_11_22.ipynb
+    ├── Docker-Libraries.ipynb
+    ├── code
+    │   ├── Augmentation data
+    │   │   ├── 1_augmentation_date_A549.ipynb
+    │   │   ├── 2_augmentation_date_Huh7.ipynb
+    │   │   └── 3_augmentation_date_3T3.ipynb
+    │   ├── CNN
+    │   │   ├── CNN_MSE_3T3_Greatest_error.ipynb
+    │   │   ├── CNN_MSE_3T3_Minor_error.ipynb
+    │   │   ├── CNN_MSE_A549_Greatest_error.ipynb
+    │   │   ├── CNN_MSE_A549_Minor_error.ipynb
+    │   │   ├── CNN_MSE_Huh7_Greatest_error.ipynb
+    │   │   └── CNN_MSE_Huh7_Minor_error.ipynb
+    │   └── Correlation
+    │       ├── Correlation_greatest_error_3T3.ipynb
+    │       ├── Correlation_greatest_error_A549.ipynb
+    │       ├── Correlation_greatest_error_Huh7.ipynb
+    │       ├── Minor_Correlation_Error_3T3.ipynb
+    │       ├── Minor_Correlation_Error_A549.ipynb
+    │       └── Minor_Correlation_Error_Huh7.ipynb
+    ├── data
+    │   ├── Image_3T3
+    │   │   ├── Figura_10_rot407_campo_claro_3T3.png
+    │   │   ├── Figura_11_rot147_campo_claro_3T3.png
+    │   │   ├── Figura_12_rot134_campo_claro_3T3.png
+    │   │   ├── Figura_13_rot296_campo_claro_3T3.png
+    │   │   ├── Figura_14_rot300_campo_claro_3T3.png
+    │   │   ├── Figura_15_rot74_campo_claro_3T3.png
+    │   │   ├── Figura_16_rot58_campo_claro_3T3.png
+    │   │   ├── Figura_17_rot95_campo_claro_3T3.png
+    │   │   ├── Figura_18_rot103_campo_claro_3T3.png
+    │   │   ├── Figura_19_rot134_campo_claro_3T3.png
+    │   │   ├── Figura_1_rot285_campo_claro_3T3.png
+    │   │   ├── Figura_20_rot40_campo_claro_3T3.png
+    │   │   ├── Figura_21_rot183_campo_claro_3T3.png
+    │   │   ├── Figura_22_rot97_campo_claro_3T3.png
+    │   │   ├── Figura_23_rot76_campo_claro_3T3.png
+    │   │   ├── Figura_24_rot113_campo_claro_3T3.png
+    │   │   ├── Figura_25_rot255_campo_claro_3T3.png
+    │   │   ├── Figura_26_rot518_campo_claro_3T3.png
+    │   │   ├── Figura_27_rot610_campo_claro_3T3.png
+    │   │   ├── Figura_28_rot709_campo_claro_3T3.png
+    │   │   ├── Figura_29_rot452_campo_claro_3T3.png
+    │   │   ├── Figura_2_rot148_campo_claro_3T3.png
+    │   │   ├── Figura_30_rot128_campo_claro_3T3.png
+    │   │   ├── Figura_31_rot221_campo_claro_3T3.png
+    │   │   ├── Figura_32_rot607_campo_claro_3T3.png
+    │   │   ├── Figura_33_rot734_campo_claro_3T3.png
+    │   │   ├── Figura_34_rot437_campo_claro_3T3.png
+    │   │   ├── Figura_35_rot259_campo_claro_3T3.png
+    │   │   ├── Figura_36_rot252_campo_claro_3T3.png
+    │   │   ├── Figura_37_rot478_campo_claro_3T3.png
+    │   │   ├── Figura_38_rot482_campo_claro_3T3.png
+    │   │   ├── Figura_39_rot334_campo_claro_3T3.png
+    │   │   ├── Figura_3_rot486_campo_claro_3T3.png
+    │   │   ├── Figura_40_rot223_campo_claro_3T3.png
+    │   │   ├── Figura_41_rot327_campo_claro_3T3.png
+    │   │   ├── Figura_42_rot229_campo_claro_3T3.png
+    │   │   ├── Figura_43_rot192_campo_claro_3T3.png
+    │   │   ├── Figura_44_rot372_campo_claro_3T3.png
+    │   │   ├── Figura_45_rot33_campo_claro_3T3.png
+    │   │   ├── Figura_46_rot28_campo_claro_3T3.png
+    │   │   ├── Figura_47_rot205_campo_claro_3T3.png
+    │   │   ├── Figura_48_rot268_campo_claro_3T3.png
+    │   │   ├── Figura_49_rot713_campo_claro_3T3.png
+    │   │   ├── Figura_4_rot753_campo_claro_3T3.png
+    │   │   ├── Figura_50_rot807_campo_claro_3T3.png
+    │   │   ├── Figura_51_rot448_campo_claro_3T3.png
+    │   │   ├── Figura_52_rot111_campo_claro_3T3.png
+    │   │   ├── Figura_5_rot409_campo_claro_3T3.png
+    │   │   ├── Figura_6_rot144_campo_claro_3T3.png
+    │   │   ├── Figura_7_rot212_campo_claro_3T3.png
+    │   │   ├── Figura_8_rot563_campo_claro_3T3.png
+    │   │   └── Figura_9_rot765_campo_claro_3T3.png
+    │   ├── Image_A549
+    │   │   ├── Figura_10_rot1231_campo_claro_A549.png
+    │   │   ├── Figura_11_rot963_campo_claro_A549.png
+    │   │   ├── Figura_12_rot876_campo_claro_A549.png
+    │   │   ├── Figura_13_rot1012_campo_claro_A549.png
+    │   │   ├── Figura_14_rot891_campo_claro_A549.png
+    │   │   ├── Figura_15_rot802_campo_claro_A549.png
+    │   │   ├── Figura_16_rot945_campo_claro_A549.png
+    │   │   ├── Figura_17_rot772_campo_claro_A549.png
+    │   │   ├── Figura_18_rot841_campo_claro_A549.png
+    │   │   ├── Figura_19_rot899_campo_claro_A549.png
+    │   │   ├── Figura_1_rot1179_campo_claro_A549.png
+    │   │   ├── Figura_20_rot821_campo_claro_A549.png
+    │   │   ├── Figura_21_rot818_campo_claro_A549.png
+    │   │   ├── Figura_22_rot917_campo_claro_A549.png
+    │   │   ├── Figura_23_rot1071_campo_claro_A549.png
+    │   │   ├── Figura_24_rot987_campo_claro_A549.png
+    │   │   ├── Figura_25_rot1126_campo_claro_A549.png
+    │   │   ├── Figura_26_rot1004_campo_claro_A549.png
+    │   │   ├── Figura_27_rot901_campo_claro_A549.png
+    │   │   ├── Figura_28_rot1151_campo_claro_A549.png
+    │   │   ├── Figura_29_rot932_campo_claro_A549.png
+    │   │   ├── Figura_2_rot1246_campo_claro_A549.png
+    │   │   ├── Figura_30_rot937_campo_claro_A549.png
+    │   │   ├── Figura_31_rot1074_campo_claro_A549.png
+    │   │   ├── Figura_32_rot909_campo_claro_A549.png
+    │   │   ├── Figura_33_rot944_campo_claro_A549.png
+    │   │   ├── Figura_34_rot1073_campo_claro_A549.png
+    │   │   ├── Figura_35_rot944_campo_claro_A549.png
+    │   │   ├── Figura_36_rot910_campo_claro_A549.png
+    │   │   ├── Figura_37_rot1077_campo_claro_A549.png
+    │   │   ├── Figura_38_rot837_campo_claro_A549.png
+    │   │   ├── Figura_39_rot910_campo_claro_A549.png
+    │   │   ├── Figura_3_rot1041_campo_claro_A549.png
+    │   │   ├── Figura_40_rot1049_campo_claro_A549.png
+    │   │   ├── Figura_41_rot876_campo_claro_A549.png
+    │   │   ├── Figura_42_rot886_campo_claro_A549.png
+    │   │   ├── Figura_43_rot950_campo_claro_A549.png
+    │   │   ├── Figura_44_rot910_campo_claro_A549.png
+    │   │   ├── Figura_45_rot906_campo_claro_A549.png
+    │   │   ├── Figura_46_rot962_campo_claro_A549.png
+    │   │   ├── Figura_47_rot1091_campo_claro_A549.png
+    │   │   ├── Figura_48_rot1039_campo_claro_A549.png
+    │   │   ├── Figura_49_rot1118_campo_claro_A549.png
+    │   │   ├── Figura_4_rot1111_campo_claro_A549.png
+    │   │   ├── Figura_50_rot1165_campo_claro_A549.png
+    │   │   ├── Figura_51_rot1150_campo_claro_A549.png
+    │   │   ├── Figura_52_rot1148_campo_claro_A549.png
+    │   │   ├── Figura_53_rot1182_campo_claro_A549.png
+    │   │   ├── Figura_54_rot1215_campo_claro_A549.png
+    │   │   ├── Figura_55_rot1218_campo_claro_A549.png
+    │   │   ├── Figura_56_rot1150_campo_claro_A549.png
+    │   │   ├── Figura_57_rot1267_campo_claro_A549.png
+    │   │   ├── Figura_58_rot1236_campo_claro_A549.png
+    │   │   ├── Figura_59_rot1049_campo_claro_A549.png
+    │   │   ├── Figura_5_rot1105_campo_claro_A549.png
+    │   │   ├── Figura_60_rot983_campo_claro_A549.png
+    │   │   ├── Figura_61_rot1044_campo_claro_A549.png
+    │   │   ├── Figura_62_rot1047_campo_claro_A549.png
+    │   │   ├── Figura_63_rot862_campo_claro_A549.png
+    │   │   ├── Figura_64_rot959_campo_claro_A549.png
+    │   │   ├── Figura_65_rot1086_campo_claro_A549.png
+    │   │   ├── Figura_66_rot802_campo_claro_A549.png
+    │   │   ├── Figura_67_rot949_campo_claro_A549.png
+    │   │   ├── Figura_68_rot983_campo_claro_A549.png
+    │   │   ├── Figura_69_rot848_campo_claro_A549.png
+    │   │   ├── Figura_6_rot1098_campo_claro_A549.png
+    │   │   ├── Figura_70_rot867_campo_claro_A549.png
+    │   │   ├── Figura_71_rot1035_campo_claro_A549.png
+    │   │   ├── Figura_7_rot1124_campo_claro_A549.png
+    │   │   ├── Figura_8_rot1142_campo_claro_A549.png
+    │   │   └── Figura_9_rot1209_campo_claro_A549.png
+    │   ├── Image_MAYV
+    │   │   ├── Figura_10_rot1137_campo_claro_MAYV.png
+    │   │   ├── Figura_11_rot1018_campo_claro_MAYV.png
+    │   │   ├── Figura_12_rot818_campo_claro_MAYV.png
+    │   │   ├── Figura_13_rot1078_campo_claro_MAYV.png
+    │   │   ├── Figura_14_rot989_campo_claro_MAYV.png
+    │   │   ├── Figura_15_rot757_campo_claro_MAYV.png
+    │   │   ├── Figura_16_rot978_campo_claro_MAYV.png
+    │   │   ├── Figura_17_rot1095_campo_claro_MAYV.png
+    │   │   ├── Figura_18_rot1010_campo_claro_MAYV.png
+    │   │   ├── Figura_19_rot710_campo_claro_MAYV.png
+    │   │   ├── Figura_1_rot633_campo_claro_MAYV.png
+    │   │   ├── Figura_20_rot661_campo_claro_MAYV.png
+    │   │   ├── Figura_21_rot741_campo_claro_MAYV.png
+    │   │   ├── Figura_22_rot628_campo_claro_MAYV.png
+    │   │   ├── Figura_23_rot687_campo_claro_MAYV.png
+    │   │   ├── Figura_24_rot768_campo_claro_MAYV.png
+    │   │   ├── Figura_25_rot595_campo_claro_MAYV.png
+    │   │   ├── Figura_26_rot581_campo_claro_MAYV.png
+    │   │   ├── Figura_27_rot647_campo_claro_MAYV.png
+    │   │   ├── Figura_28_rot609_campo_claro_MAYV.png
+    │   │   ├── Figura_29_rot631_campo_claro_MAYV.png
+    │   │   ├── Figura_2_rot537_campo_claro_MAYV.png
+    │   │   ├── Figura_30_rot535_campo_claro_MAYV.png
+    │   │   ├── Figura_31_rot551_campo_claro_MAYV.png
+    │   │   ├── Figura_32_rot627_campo_claro_MAYV.png
+    │   │   ├── Figura_33_rot425_campo_claro_MAYV.png
+    │   │   ├── Figura_34_rot581_campo_claro_MAYV.png
+    │   │   ├── Figura_35_rot546_campo_claro_MAYV.png
+    │   │   ├── Figura_36_rot409_campo_claro_MAYV.png
+    │   │   ├── Figura_37_rot466_campo_claro_MAYV.png
+    │   │   ├── Figura_38_rot415_campo_claro_MAYV.png
+    │   │   ├── Figura_39_rot521_campo_claro_MAYV.png
+    │   │   ├── Figura_3_rot585_campo_claro_MAYV.png
+    │   │   ├── Figura_40_rot408_campo_claro_MAYV.png
+    │   │   ├── Figura_41_rot484_campo_claro_MAYV.png
+    │   │   ├── Figura_42_rot511_campo_claro_MAYV.png
+    │   │   ├── Figura_43_rot353_campo_claro_MAYV.png
+    │   │   ├── Figura_44_rot311_campo_claro_MAYV.png
+    │   │   ├── Figura_45_rot299_campo_claro_MAYV.png
+    │   │   ├── Figura_46_rot719_campo_claro_MAYV.png
+    │   │   ├── Figura_47_rot543_campo_claro_MAYV.png
+    │   │   ├── Figura_48_rot629_campo_claro_MAYV.png
+    │   │   ├── Figura_49_rot598_campo_claro_MAYV.png
+    │   │   ├── Figura_4_rot607_campo_claro_MAYV.png
+    │   │   ├── Figura_50_rot597_campo_claro_MAYV.png
+    │   │   ├── Figura_51_rot646_campo_claro_MAYV.png
+    │   │   ├── Figura_52_rot554_campo_claro_MAYV.png
+    │   │   ├── Figura_53_rot521_campo_claro_MAYV.png
+    │   │   ├── Figura_54_rot436_campo_claro_MAYV.png
+    │   │   ├── Figura_55_rot618_campo_claro_MAYV.png
+    │   │   ├── Figura_56_rot509_campo_claro_MAYV.png
+    │   │   ├── Figura_57_rot464_campo_claro_MAYV.png
+    │   │   ├── Figura_58_rot578_campo_claro_MAYV.png
+    │   │   ├── Figura_59_rot590_campo_claro_MAYV.png
+    │   │   ├── Figura_5_rot401_campo_claro_MAYV.png
+    │   │   ├── Figura_60_rot494_campo_claro_MAYV.png
+    │   │   ├── Figura_61_rot278_campo_claro_MAYV.png
+    │   │   ├── Figura_62_rot404_campo_claro_MAYV.png
+    │   │   ├── Figura_63_rot441_campo_claro_MAYV.png
+    │   │   ├── Figura_64_rot629_campo_claro_MAYV.png
+    │   │   ├── Figura_65_rot674_campo_claro_MAYV.png
+    │   │   ├── Figura_66_rot610_campo_claro_MAYV.png
+    │   │   ├── Figura_67_rot526_campo_claro_MAYV.png
+    │   │   ├── Figura_68_rot608_campo_claro_MAYV.png
+    │   │   ├── Figura_69_rot557_campo_claro_MAYV.png
+    │   │   ├── Figura_6_rot482_campo_claro_MAYV.png
+    │   │   ├── Figura_70_rot620_campo_claro_MAYV.png
+    │   │   ├── Figura_71_rot490_campo_claro_MAYV.png
+    │   │   ├── Figura_72_rot592_campo_claro_MAYV.png
+    │   │   ├── Figura_73_rot568_campo_claro_MAYV.png
+    │   │   ├── Figura_74_rot539_campo_claro_MAYV.png
+    │   │   ├── Figura_75_rot776_campo_claro_MAYV.png
+    │   │   ├── Figura_76_rot512_campo_claro_MAYV.png
+    │   │   ├── Figura_77_rot629_campo_claro_MAYV.png
+    │   │   ├── Figura_78_rot818_campo_claro_MAYV.png
+    │   │   ├── Figura_79_rot493_campo_claro_MAYV.png
+    │   │   ├── Figura_7_rot491_campo_claro_MAYV.png
+    │   │   ├── Figura_80_rot597_campo_claro_MAYV.png
+    │   │   ├── Figura_8_rot418_campo_claro_MAYV.png
+    │   │   └── Figura_9_rot536_campo_claro_MAYV.png
+    │   ├── Image_SH-SY5Y
+    │   │   ├── Figura_10_rot925_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_11_rot635_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_12_rot526_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_13_rot866_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_14_rot699_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_15_rot518_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_16_rot632_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_17_rot523_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_18_rot462_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_19_rot828_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_1_rot893_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_20_rot663_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_21_rot558_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_22_rot631_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_23_rot559_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_24_rot481_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_25_rot576_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_26_rot483_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_27_rot556_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_28_rot677_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_29_rot906_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_2_rot663_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_30_rot797_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_31_rot732_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_32_rot839_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_33_rot1033_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_34_rot620_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_35_rot778_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_36_rot979_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_37_rot731_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_38_rot797_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_39_rot943_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_3_rot548_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_40_rot950_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_41_rot664_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_42_rot801_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_43_rot960_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_44_rot543_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_45_rot598_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_46_rot612_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_47_rot929_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_48_rot871_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_49_rot695_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_4_rot789_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_50_rot761_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_51_rot628_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_52_rot627_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_53_rot623_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_54_rot624_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_55_rot519_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_56_rot583_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_57_rot685_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_58_rot873_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_59_rot504_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_5_rot594_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_60_rot598_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_61_rot762_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_62_rot568_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_63_rot555_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_64_rot617_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_65_rot862_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_66_rot764_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_67_rot637_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_68_rot740_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_69_rot759_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_6_rot479_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_70_rot705_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_71_rot613_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_72_rot649_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_73_rot772_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_7_rot703_campo_claro_SH-SY5Y.png
+    │   │   ├── Figura_8_rot578_campo_claro_SH-SY5Y.png
+    │   │   └── Figura_9_rot456_campo_claro_SH-SY5Y.png
+    │   ├── Image_huh7
+    │   │   ├── Figura 10_rot830_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 11_rot802_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 12_rot721_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 13_rot756_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 14_rot716_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 15_rot674_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 16_rot698_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 17_rot694_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 18_rot745_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 19_rot750_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 1_rot1383_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 20_rot705_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 21_rot726_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 22_rot687_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 23_rot704_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 24_rot683_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 25_rot684_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 26_rot686_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 27_rot1216_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 28_rot1325_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 29_rot918_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 2_rot335_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 30_rot1406_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 31_rot1476_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 32_rot695_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 33_rot752_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 34_rot757_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 35_rot332_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 36_rot691_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 37_rot772_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 38_rot727_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 39_rot692_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 3_rot1541_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 40_rot676_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 41_rot725_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 42_rot698_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 43_rot696_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 44_rot622_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 4_rot1339_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 5_rot414_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 6_rot779_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 7_rot652_campo_claro_ajuste_huh7.png
+    │   │   ├── Figura 8_rot271_campo_claro_ajuste_huh7.png
+    │   │   └── Figura 9_rot741_campo_claro_ajuste_huh7.png
+    │   ├── Image_mAb_DENV1
+    │   │   ├── Figura_10_rot928_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_11_rot1054_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_12_rot1395_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_13_rot1127_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_14_rot1272_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_15_rot1511_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_16_rot1323_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_17_rot606_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_18_rot1350_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_19_rot1003_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_1_rot1173_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_20_rot1158_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_21_rot1188_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_22_rot1174_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_23_rot1401_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_24_rot1195_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_25_rot888_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_26_rot1055_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_27_rot772_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_28_rot646_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_29_rot980_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_2_rot1129_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_30_rot1328_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_31_rot1200_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_32_rot752_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_33_rot929_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_34_rot903_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_35_rot1049_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_36_rot1083_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_37_rot1020_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_38_rot1349_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_39_rot1320_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_3_rot946_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_40_rot1371_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_41_rot962_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_42_rot1304_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_43_rot1295_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_44_rot1302_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_45_rot1437_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_46_rot1473_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_47_rot1412_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_48_rot1340_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_49_rot1041_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_4_rot1290_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_50_rot1052_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_51_rot1043_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_52_rot965_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_53_rot914_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_54_rot920_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_55_rot1484_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_56_rot1265_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_57_rot1213_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_58_rot1309_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_59_rot1250_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_5_rot1137_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_60_rot1239_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_61_rot1174_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_62_rot1236_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_63_rot1328_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_64_rot1453_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_65_rot971_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_66_rot698_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_67_rot658_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_68_rot1406_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_69_rot1392_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_6_rot1497_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_70_rot1254_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_71_rot1019_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_72_rot818_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_73_rot686_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_74_rot1186_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_75_rot986_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_76_rot889_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_77_rot1118_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_78_rot889_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_79_rot749_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_7_rot1332_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_80_rot1593_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_81_rot1309_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_82_rot1040_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_83_rot1318_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_84_rot1490_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_85_rot1341_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_86_rot1261_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_87_rot1283_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_88_rot1458_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_89_rot1313_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_8_rot1265_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_90_rot1091_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_91_rot1079_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_92_rot996_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_93_rot1515_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_94_rot1406_campo_claro_mAb_DENV1.png
+    │   │   ├── Figura_95_rot1045_campo_claro_mAb_DENV1.png
+    │   │   └── Figura_9_rot1051_campo_claro_mAb_DENV1.png
+    │   ├── Image_mAb_Macrofagos_THP1
+    │   │   ├── Figura_100_rot190_campo_claro_THP1.png
+    │   │   ├── Figura_101_rot57_campo_claro_THP1.png
+    │   │   ├── Figura_102_rot400_campo_claro_THP1.png
+    │   │   ├── Figura_103_rot133_campo_claro_THP1.png
+    │   │   ├── Figura_104_rot55_campo_claro_THP1.png
+    │   │   ├── Figura_105_rot915_campo_claro_THP1.png
+    │   │   ├── Figura_106_rot408_campo_claro_THP1.png
+    │   │   ├── Figura_10_rot301_campo_claro_THP1.png
+    │   │   ├── Figura_11_rot234_campo_claro_THP1.png
+    │   │   ├── Figura_12_rot169_campo_claro_THP1.png
+    │   │   ├── Figura_13_rot166_campo_claro_THP1.png
+    │   │   ├── Figura_14_rot282_campo_claro_THP1.png
+    │   │   ├── Figura_15_rot326_campo_claro_THP1.png
+    │   │   ├── Figura_16_rot114_campo_claro_THP1.png
+    │   │   ├── Figura_17_rot245_campo_claro_THP1.png
+    │   │   ├── Figura_18_rot107_campo_claro_THP1.png
+    │   │   ├── Figura_19_rot530_campo_claro_THP1.png
+    │   │   ├── Figura_1_rot37_campo_claro_THP1.png
+    │   │   ├── Figura_20_rot327_campo_claro_THP1.png
+    │   │   ├── Figura_21_rot362_campo_claro_THP1.png
+    │   │   ├── Figura_22_rot337_campo_claro_THP1.png
+    │   │   ├── Figura_23_rot394_campo_claro_THP1.png
+    │   │   ├── Figura_24_rot511_campo_claro_THP1.png
+    │   │   ├── Figura_25_rot38_campo_claro_THP1.png
+    │   │   ├── Figura_26_rot207_campo_claro_THP1.png
+    │   │   ├── Figura_27_rot544_campo_claro_THP1.png
+    │   │   ├── Figura_28_rot433_campo_claro_THP1.png
+    │   │   ├── Figura_29_rot21_campo_claro_THP1.png
+    │   │   ├── Figura_2_rot80_campo_claro_THP1.png
+    │   │   ├── Figura_30_rot64_campo_claro_THP1.png
+    │   │   ├── Figura_31_rot572_campo_claro_THP1.png
+    │   │   ├── Figura_32_rot454_campo_claro_THP1.png
+    │   │   ├── Figura_33_rot400_campo_claro_THP1.png
+    │   │   ├── Figura_34_rot1196_campo_claro_THP1.png
+    │   │   ├── Figura_35_rot961_campo_claro_THP1.png
+    │   │   ├── Figura_36_rot450_campo_claro_THP1.png
+    │   │   ├── Figura_37_rot40_campo_claro_THP1.png
+    │   │   ├── Figura_38_rot355_campo_claro_THP1.png
+    │   │   ├── Figura_39_rot52_campo_claro_THP1.png
+    │   │   ├── Figura_3_rot54_campo_claro_THP1.png
+    │   │   ├── Figura_40_rot29_campo_claro_THP1.png
+    │   │   ├── Figura_41_rot24_campo_claro_THP1.png
+    │   │   ├── Figura_42_rot37_campo_claro_THP1.png
+    │   │   ├── Figura_43_rot93_campo_claro_THP1.png
+    │   │   ├── Figura_44_rot72_campo_claro_THP1.png
+    │   │   ├── Figura_45_rot91_campo_claro_THP1.png
+    │   │   ├── Figura_46_rot39_campo_claro_THP1.png
+    │   │   ├── Figura_47_rot307_campo_claro_THP1.png
+    │   │   ├── Figura_48_rot220_campo_claro_THP1.png
+    │   │   ├── Figura_49_rot28_campo_claro_THP1.png
+    │   │   ├── Figura_4_rot51_campo_claro_THP1.png
+    │   │   ├── Figura_50_rot75_campo_claro_THP1.png
+    │   │   ├── Figura_51_rot183_campo_claro_THP1.png
+    │   │   ├── Figura_52_rot46_campo_claro_THP1.png
+    │   │   ├── Figura_53_rot101_campo_claro_THP1.png
+    │   │   ├── Figura_54_rot222_campo_claro_THP1.png
+    │   │   ├── Figura_55_rot107_campo_claro_THP1.png
+    │   │   ├── Figura_56_rot13_campo_claro_THP1.png
+    │   │   ├── Figura_57_rot134_campo_claro_THP1.png
+    │   │   ├── Figura_58_rot83_campo_claro_THP1.png
+    │   │   ├── Figura_59_rot160_campo_claro_THP1.png
+    │   │   ├── Figura_5_rot38_campo_claro_THP1.png
+    │   │   ├── Figura_60_rot158_campo_claro_THP1.png
+    │   │   ├── Figura_61_rot107_campo_claro_THP1.png
+    │   │   ├── Figura_62_rot37_campo_claro_THP1.png
+    │   │   ├── Figura_63_rot166_campo_claro_THP1.png
+    │   │   ├── Figura_64_rot25_campo_claro_THP1.png
+    │   │   ├── Figura_65_rot131_campo_claro_THP1.png
+    │   │   ├── Figura_66_rot745_campo_claro_THP1.png
+    │   │   ├── Figura_67_rot170_campo_claro_THP1.png
+    │   │   ├── Figura_68_rot468_campo_claro_THP1.png
+    │   │   ├── Figura_69_rot827_campo_claro_THP1.png
+    │   │   ├── Figura_6_rot21_campo_claro_THP1.png
+    │   │   ├── Figura_70_rot88_campo_claro_THP1.png
+    │   │   ├── Figura_71_rot309_campo_claro_THP1.png
+    │   │   ├── Figura_72_rot214_campo_claro_THP1.png
+    │   │   ├── Figura_73_rot261_campo_claro_THP1.png
+    │   │   ├── Figura_74_rot204_campo_claro_THP1.png
+    │   │   ├── Figura_75_rot121_campo_claro_THP1.png
+    │   │   ├── Figura_76_rot261_campo_claro_THP1.png
+    │   │   ├── Figura_77_rot133_campo_claro_THP1.png
+    │   │   ├── Figura_78_rot57_campo_claro_THP1.png
+    │   │   ├── Figura_79_rot109_campo_claro_THP1.png
+    │   │   ├── Figura_7_rot46_campo_claro_THP1.png
+    │   │   ├── Figura_80_rot482_campo_claro_THP1.png
+    │   │   ├── Figura_81_rot53_campo_claro_THP1.png
+    │   │   ├── Figura_82_rot104_campo_claro_THP1.png
+    │   │   ├── Figura_83_rot376_campo_claro_THP1.png
+    │   │   ├── Figura_84_rot378_campo_claro_THP1.png
+    │   │   ├── Figura_85_rot291_campo_claro_THP1.png
+    │   │   ├── Figura_86_rot253_campo_claro_THP1.png
+    │   │   ├── Figura_87_rot643_campo_claro_THP1.png
+    │   │   ├── Figura_88_rot244_campo_claro_THP1.png
+    │   │   ├── Figura_89_rot487_campo_claro_THP1.png
+    │   │   ├── Figura_8_rot7_campo_claro_THP1.png
+    │   │   ├── Figura_90_rot658_campo_claro_THP1.png
+    │   │   ├── Figura_91_rot34_campo_claro_THP1.png
+    │   │   ├── Figura_92_rot31_campo_claro_THP1.png
+    │   │   ├── Figura_93_rot48_campo_claro_THP1.png
+    │   │   ├── Figura_94_rot33_campo_claro_THP1.png
+    │   │   ├── Figura_95_rot56_campo_claro_THP1.png
+    │   │   ├── Figura_96_rot51_campo_claro_THP1.png
+    │   │   ├── Figura_97_rot113_campo_claro_THP1.png
+    │   │   ├── Figura_98_rot52_campo_claro_THP1.png
+    │   │   ├── Figura_99_rot309_campo_claro_THP1.png
+    │   │   └── Figura_9_rot69_campo_claro_THP1.png
+    │   ├── Imagens_A172
+    │   │   ├── Figura_10_rot111_campo_claro_A172.png
+    │   │   ├── Figura_11_rot116_campo_claro_A172.png
+    │   │   ├── Figura_12_rot141_campo_claro_A172.png
+    │   │   ├── Figura_13_rot128_campo_claro_A172.png
+    │   │   ├── Figura_14_rot134_campo_claro_A172.png
+    │   │   ├── Figura_15_rot122_campo_claro_A172.png
+    │   │   ├── Figura_16_rot130_campo_claro_A172.png
+    │   │   ├── Figura_17_rot109_campo_claro_A172.png
+    │   │   ├── Figura_18_rot142_campo_claro_A172.png
+    │   │   ├── Figura_19_rot264_campo_claro_A172.png
+    │   │   ├── Figura_1_rot332_campo_claro_A172.png
+    │   │   ├── Figura_20_rot323_campo_claro_A172.png
+    │   │   ├── Figura_21_rot347_campo_claro_A172.png
+    │   │   ├── Figura_22_rot224_campo_claro_A172.png
+    │   │   ├── Figura_23_rot251_campo_claro_A172.png
+    │   │   ├── Figura_24_rot274_campo_claro_A172.png
+    │   │   ├── Figura_25_rot209_campo_claro_A172.png
+    │   │   ├── Figura_26_rot243_campo_claro_A172.png
+    │   │   ├── Figura_27_rot265_campo_claro_A172.png
+    │   │   ├── Figura_28_rot195_campo_claro_A172.png
+    │   │   ├── Figura_29_rot168_campo_claro_A172.png
+    │   │   ├── Figura_2_rot225_campo_claro_A172.png
+    │   │   ├── Figura_30_rot149_campo_claro_A172.png
+    │   │   ├── Figura_31_rot265_campo_claro_A172.png
+    │   │   ├── Figura_32_rot207_campo_claro_A172.png
+    │   │   ├── Figura_33_rot124_campo_claro_A172.png
+    │   │   ├── Figura_34_rot298_campo_claro_A172.png
+    │   │   ├── Figura_35_rot195_campo_claro_A172.png
+    │   │   ├── Figura_36_rot158_campo_claro_A172.png
+    │   │   ├── Figura_37_rot209_campo_claro_A172.png
+    │   │   ├── Figura_38_rot148_campo_claro_A172.png
+    │   │   ├── Figura_39_rot165_campo_claro_A172.png
+    │   │   ├── Figura_3_rot180_campo_claro_A172.png
+    │   │   ├── Figura_40_rot192_campo_claro_A172.png
+    │   │   ├── Figura_41_rot187_campo_claro_A172.png
+    │   │   ├── Figura_42_rot178_campo_claro_A172.png
+    │   │   ├── Figura_43_rot172_campo_claro_A172.png
+    │   │   ├── Figura_44_rot152_campo_claro_A172.png
+    │   │   ├── Figura_45_rot190_campo_claro_A172.png
+    │   │   ├── Figura_46_rot221_campo_claro_A172.png
+    │   │   ├── Figura_47_rot228_campo_claro_A172.png
+    │   │   ├── Figura_48_rot212_campo_claro_A172.png
+    │   │   ├── Figura_49_rot152_campo_claro_A172.png
+    │   │   ├── Figura_4_rot306_campo_claro_A172.png
+    │   │   ├── Figura_50_rot167_campo_claro_A172.png
+    │   │   ├── Figura_51_rot166_campo_claro_A172.png
+    │   │   ├── Figura_52_rot153_campo_claro_A172.png
+    │   │   ├── Figura_53_rot134_campo_claro_A172.png
+    │   │   ├── Figura_54_rot154_campo_claro_A172.png
+    │   │   ├── Figura_55_rot146_campo_claro_A172.png
+    │   │   ├── Figura_56_rot181_campo_claro_A172.png
+    │   │   ├── Figura_57_rot179_campo_claro_A172.png
+    │   │   ├── Figura_58_rot178_campo_claro_A172.png
+    │   │   ├── Figura_59_rot196_campo_claro_A172.png
+    │   │   ├── Figura_5_rot245_campo_claro_A172.png
+    │   │   ├── Figura_60_rot163_campo_claro_A172.png
+    │   │   ├── Figura_61_rot217_campo_claro_A172.png
+    │   │   ├── Figura_62_rot183_campo_claro_A172.png
+    │   │   ├── Figura_63_rot132_campo_claro_A172.png
+    │   │   ├── Figura_64_rot171_campo_claro_A172.png
+    │   │   ├── Figura_65_rot162_campo_claro_A172.png
+    │   │   ├── Figura_66_rot157_campo_claro_A172.png
+    │   │   ├── Figura_67_rot195_campo_claro_A172.png
+    │   │   ├── Figura_68_rot166_campo_claro_A172.png
+    │   │   ├── Figura_69_rot173_campo_claro_A172.png
+    │   │   ├── Figura_6_rot185_campo_claro_A172.png
+    │   │   ├── Figura_70_rot214_campo_claro_A172.png
+    │   │   ├── Figura_71_rot164_campo_claro_A172.png
+    │   │   ├── Figura_72_rot148_campo_claro_A172.png
+    │   │   ├── Figura_73_rot189_campo_claro_A172.png
+    │   │   ├── Figura_74_rot161_campo_claro_A172.png
+    │   │   ├── Figura_75_rot170_campo_claro_A172.png
+    │   │   ├── Figura_76_rot191_campo_claro_A172.png
+    │   │   ├── Figura_77_rot184_campo_claro_A172.png
+    │   │   ├── Figura_78_rot148_campo_claro_A172.png
+    │   │   ├── Figura_79_rot192_campo_claro_A172.png
+    │   │   ├── Figura_7_rot283_campo_claro_A172.png
+    │   │   ├── Figura_80_rot180_campo_claro_A172.png
+    │   │   ├── Figura_81_rot158_campo_claro_A172.png
+    │   │   ├── Figura_82_rot221_campo_claro_A172.png
+    │   │   ├── Figura_83_rot192_campo_claro_A172.png
+    │   │   ├── Figura_84_rot185_campo_claro_A172.png
+    │   │   ├── Figura_85_rot229_campo_claro_A172.png
+    │   │   ├── Figura_86_rot211_campo_claro_A172.png
+    │   │   ├── Figura_87_rot209_campo_claro_A172.png
+    │   │   ├── Figura_88_rot229_campo_claro_A172.png
+    │   │   ├── Figura_89_rot227_campo_claro_A172.png
+    │   │   ├── Figura_8_rot210_campo_claro_A172.png
+    │   │   ├── Figura_90_rot215_campo_claro_A172.png
+    │   │   ├── Figura_91_rot204_campo_claro_A172.png
+    │   │   ├── Figura_92_rot197_campo_claro_A172.png
+    │   │   ├── Figura_93_rot199_campo_claro_A172.png
+    │   │   ├── Figura_94_rot189_campo_claro_A172.png
+    │   │   ├── Figura_95_rot187_campo_claro_A172.png
+    │   │   ├── Figura_96_rot192_campo_claro_A172.png
+    │   │   ├── Figura_97_rot172_campo_claro_A172.png
+    │   │   ├── Figura_98_rot187_campo_claro_A172.png
+    │   │   ├── Figura_99_rot192_campo_claro_A172.png
+    │   │   └── Figura_9_rot152_campo_claro_A172.png
+    │   └── Imagens_VERO6
+    │       ├── Figura_100_rot1521_campo_claro_VERO6.png
+    │       ├── Figura_101_rot1395_campo_claro_VERO6.png
+    │       ├── Figura_102_rot1413_campo_claro_VERO6.png
+    │       ├── Figura_103_rot1397_campo_claro_VERO6.png
+    │       ├── Figura_104_rot1478_campo_claro_VERO6.png
+    │       ├── Figura_105_rot1429_campo_claro_VERO6.png
+    │       ├── Figura_106_rot1454_campo_claro_VERO6.png
+    │       ├── Figura_107_rot1338_campo_claro_VERO6.png
+    │       ├── Figura_108_rot1346_campo_claro_VERO6.png
+    │       ├── Figura_109_rot1375_campo_claro_VERO6.png
+    │       ├── Figura_10_rot1595_campo_claro_VERO6.png
+    │       ├── Figura_110_rot1427_campo_claro_VERO6.png
+    │       ├── Figura_111_rot1624_campo_claro_VERO6.png
+    │       ├── Figura_11_rot1539_campo_claro_VERO6.png
+    │       ├── Figura_12_rot1468_campo_claro_VERO6.png
+    │       ├── Figura_13_rot1433_campo_claro_VERO6.png
+    │       ├── Figura_14_rot1426_campo_claro_VERO6.png
+    │       ├── Figura_15_rot1367_campo_claro_VERO6.png
+    │       ├── Figura_16_rot1595_campo_claro_VERO6.png
+    │       ├── Figura_17_rot1439_campo_claro_VERO6.png
+    │       ├── Figura_18_rot1360_campo_claro_VERO6.png
+    │       ├── Figura_19_rot1408_campo_claro_VERO6.png
+    │       ├── Figura_1_rot1760_campo_claro_VERO6.png
+    │       ├── Figura_20_rot1355_campo_claro_VERO6.png
+    │       ├── Figura_21_rot1307_campo_claro_VERO6.png
+    │       ├── Figura_22_rot1529_campo_claro_VERO6.png
+    │       ├── Figura_23_rot1466_campo_claro_VERO6.png
+    │       ├── Figura_24_rot1412_campo_claro_VERO6.png
+    │       ├── Figura_25_rot1352_campo_claro_VERO6.png
+    │       ├── Figura_26_rot1295_campo_claro_VERO6.png
+    │       ├── Figura_27_rot1658_campo_claro_VERO6.png
+    │       ├── Figura_28_rot1624_campo_claro_VERO6.png
+    │       ├── Figura_29_rot1587_campo_claro_VERO6.png
+    │       ├── Figura_2_rot1626_campo_claro_VERO6.png
+    │       ├── Figura_30_rot1592_campo_claro_VERO6.png
+    │       ├── Figura_31_rot1651_campo_claro_VERO6.png
+    │       ├── Figura_32_rot1575_campo_claro_VERO6.png
+    │       ├── Figura_33_rot1516_campo_claro_VERO6.png
+    │       ├── Figura_34_rot1587_campo_claro_VERO6.png
+    │       ├── Figura_35_rot1578_campo_claro_VERO6.png
+    │       ├── Figura_36_rot1518_campo_claro_VERO6.png
+    │       ├── Figura_37_rot1611_campo_claro_VERO6.png
+    │       ├── Figura_38_rot1531_campo_claro_VERO6.png
+    │       ├── Figura_39_rot1463_campo_claro_VERO6.png
+    │       ├── Figura_3_rot1578_campo_claro_VERO6.png
+    │       ├── Figura_40_rot1455_campo_claro_VERO6.png
+    │       ├── Figura_41_rot1565_campo_claro_VERO6.png
+    │       ├── Figura_42_rot1523_campo_claro_VERO6.png
+    │       ├── Figura_43_rot1520_campo_claro_VERO6.png
+    │       ├── Figura_44_rot1515_campo_claro_VERO6.png
+    │       ├── Figura_45_rot1436_campo_claro_VERO6.png
+    │       ├── Figura_46_rot1453_campo_claro_VERO6.png
+    │       ├── Figura_47_rot1457_campo_claro_VERO6.png
+    │       ├── Figura_48_rot1497_campo_claro_VERO6.png
+    │       ├── Figura_49_rot1474_campo_claro_VERO6.png
+    │       ├── Figura_4_rot1575_campo_claro_VERO6.png
+    │       ├── Figura_50_rot1428_campo_claro_VERO6.png
+    │       ├── Figura_51_rot1420_campo_claro_VERO6.png
+    │       ├── Figura_52_rot1407_campo_claro_VERO6.png
+    │       ├── Figura_53_rot1478_campo_claro_VERO6.png
+    │       ├── Figura_54_rot1632_campo_claro_VERO6.png
+    │       ├── Figura_55_rot1636_campo_claro_VERO6.png
+    │       ├── Figura_56_rot1600_campo_claro_VERO6.png
+    │       ├── Figura_57_rot1638_campo_claro_VERO6.png
+    │       ├── Figura_58_rot1635_campo_claro_VERO6.png
+    │       ├── Figura_59_rot1571_campo_claro_VERO6.png
+    │       ├── Figura_5_rot1531_campo_claro_VERO6.png
+    │       ├── Figura_60_rot1492_campo_claro_VERO6.png
+    │       ├── Figura_61_rot1515_campo_claro_VERO6.png
+    │       ├── Figura_62_rot1559_campo_claro_VERO6.png
+    │       ├── Figura_63_rot1572_campo_claro_VERO6.png
+    │       ├── Figura_64_rot1580_campo_claro_VERO6.png
+    │       ├── Figura_65_rot1581_campo_claro_VERO6.png
+    │       ├── Figura_66_rot1510_campo_claro_VERO6.png
+    │       ├── Figura_67_rot1534_campo_claro_VERO6.png
+    │       ├── Figura_68_rot1456_campo_claro_VERO6.png
+    │       ├── Figura_69_rot1422_campo_claro_VERO6.png
+    │       ├── Figura_6_rot1620_campo_claro_VERO6.png
+    │       ├── Figura_70_rot1453_campo_claro_VERO6.png
+    │       ├── Figura_71_rot1503_campo_claro_VERO6.png
+    │       ├── Figura_72_rot1527_campo_claro_VERO6.png
+    │       ├── Figura_73_rot1435_campo_claro_VERO6.png
+    │       ├── Figura_74_rot1450_campo_claro_VERO6.png
+    │       ├── Figura_75_rot1402_campo_claro_VERO6.png
+    │       ├── Figura_76_rot1405_campo_claro_VERO6.png
+    │       ├── Figura_76_rot1412_campo_claro_VERO6.png
+    │       ├── Figura_77_rot1515_campo_claro_VERO6.png
+    │       ├── Figura_78_rot1382_campo_claro_VERO6.png
+    │       ├── Figura_79_rot1412_campo_claro_VERO6.png
+    │       ├── Figura_7_rot1591_campo_claro_VERO6.png
+    │       ├── Figura_80_rot1435_campo_claro_VERO6.png
+    │       ├── Figura_81_rot1459_campo_claro_VERO6.png
+    │       ├── Figura_82_rot1401_campo_claro_VERO6.png
+    │       ├── Figura_83_rot1652_campo_claro_VERO6.png
+    │       ├── Figura_84_rot1574_campo_claro_VERO6.png
+    │       ├── Figura_85_rot1596_campo_claro_VERO6.png
+    │       ├── Figura_86_rot1634_campo_claro_VERO6.png
+    │       ├── Figura_87_rot1575_campo_claro_VERO6.png
+    │       ├── Figura_88_rot1566_campo_claro_VERO6.png
+    │       ├── Figura_89_rot1559_campo_claro_VERO6.png
+    │       ├── Figura_8_rot1581_campo_claro_VERO6.png
+    │       ├── Figura_90_rot1472_campo_claro_VERO6.png
+    │       ├── Figura_91_rot1521_campo_claro_VERO6.png
+    │       ├── Figura_92_rot1570_campo_claro_VERO6.png
+    │       ├── Figura_93_rot1575_campo_claro_VERO6.png
+    │       ├── Figura_94_rot1449_campo_claro_VERO6.png
+    │       ├── Figura_95_rot1439_campo_claro_VERO6.png
+    │       ├── Figura_96_rot1478_campo_claro_VERO6.png
+    │       ├── Figura_97_rot1486_campo_claro_VERO6.png
+    │       ├── Figura_98_rot1569_campo_claro_VERO6.png
+    │       ├── Figura_99_rot1567_campo_claro_VERO6.png
+    │       └── Figura_9_rot1691_campo_claro_VERO6.png
+    ├── pycaret-guilherme
+    │   ├── Classificação_imagens_PyCaret_2022_11_20.ipynb
+    │   └── data
+    │       └── df_uniao_cell_line
+    ├── results
+    │   ├── Classificação_imagens_DOC_CNN
+    │   │   ├── Cópia de lista_img_camp_clar_100_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── Cópia de lista_img_camp_clar_25_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── Cópia de lista_img_camp_clar_50_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── Cópia de lista_img_camp_clar_75_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── Cópia de lista_rotulo_camp_clar_100_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── Cópia de lista_rotulo_camp_clar_25_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── Cópia de lista_rotulo_camp_clar_50_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── Cópia de lista_rotulo_camp_clar_75_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_3T32022-11-3.gz
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_A5492022-11-3.gz
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_HUH72022-11-3.gz
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_mAb_DENV12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_3T3_2022-11-3.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_A5492022-11-3.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_HUH72022-11-3.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_mAb_DENV12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_3T3_2022-11-3.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_A5492022-11-3.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_HUH72022-11-3.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_mAb_DENV12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_3T3_2022-11-3.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_A5492022-11-3.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_HUH72022-11-3.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_mAb_DENV12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_3T32022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_A5492022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_HUH72022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_mAb_DENV12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_3T3_2022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_A5492022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_HUH72022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_mAb_DENV12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_3T3_2022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_A5492022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_HUH72022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_mAb_DENV12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_75_resized_regressao_3T3_2022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_75_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_75_resized_regressao_A5492022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_75_resized_regressao_HUH72022-11-3.gz
+    │   │   ├── lista_rotulo_camp_clar_75_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_75_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_75_resized_regressao_THP12022-10-25.gz
+    │   │   └── lista_rotulo_camp_clar_75_resized_regressao_mAb_DENV12022-10-25.gz
+    │   ├── Correlation_greatest_error_A549.png
+    │   ├── results_3T3
+    │   │   ├── 10_images_de_X_test_3T3_melhor_modelo_200_epochs_2022-6-30.gz
+    │   │   ├── 11_images_de_y_test_3T3_melhor_model_200_epochs_2022-6-30.gz
+    │   │   ├── 12_lista_img_camp_clar_100_resized_regressao_3T3_samehuh72021-10-25.gz
+    │   │   ├── 13_lista_rotulo_camp_clar_100_resized_regressao_3T3_samehuh72021-10-25.gz
+    │   │   ├── 14_model__3T3_regressao_Maior_erro_Mean_squared_error_500_epochs_2022-6-30.h5
+    │   │   ├── 15_images_de_X_test_3T3_PIOR_modelo_500_epochs2022-6-30.gz
+    │   │   ├── 16_images_de_y_test_3T3_PIOR_modelo_500_epochs2022-6-30.gz
+    │   │   ├── 1_lista_img_camp_clar_100_resized_regressao_3T32021-11-9.gz
+    │   │   ├── 2_lista_img_camp_clar_75_resized_regressao_3T3_2021-11-9.gz
+    │   │   ├── 3_lista_img_camp_clar_50_resized_regressao_3T3_2021-11-9.gz
+    │   │   ├── 4_lista_img_camp_clar_25_resized_regressao_3T3_2021-11-9.gz
+    │   │   ├── 5_lista_rotulo_camp_clar_100_resized_regressao_3T32021-11-9.gz
+    │   │   ├── 6_lista_rotulo_camp_clar_75_resized_regressao_3T3_2021-11-9.gz
+    │   │   ├── 7_lista_rotulo_camp_clar_50_resized_regressao_3T3_2021-11-9.gz
+    │   │   ├── 8_lista_rotulo_camp_clar_25_resized_regressao_3T3_2021-11-9.gz
+    │   │   └── 9_model__3T3_regressao_menor_erro_Mean_squared_error_200_epochs_2022-6-30.h5
+    │   ├── results_A172
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_A1722022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_A1722022-10-25.gz
+    │   │   └── lista_rotulo_camp_clar_75_resized_regressao_A1722022-10-25.gz
+    │   ├── results_A549
+    │   │   ├── 10_images_de_X_test_a549_melhor_modelo_18_PACIENCE_500_2022-6-29.gz
+    │   │   ├── 11_images_de_y_test_a549_melhor_modelo_18_PACIENCE%00_2022-6-29.gz
+    │   │   ├── 12_lista_img_camp_clar_100_resized_regressao_A549_samehuh72021-10-25.gz
+    │   │   ├── 13_lista_rotulo_camp_clar_100_resized_regressao_A549_samehuh72021-10-25.gz
+    │   │   ├── 14_model__A549_regressao_maior_erro_18_PACIEN_500_2022-6-29.h5
+    │   │   ├── 15_images_de_X_test_a549_pior_modelo_18_PACIENCE_500_2022-6-29.gz
+    │   │   ├── 16_images_de_y_test_a549_pior_modelo_18_PACIENCE_500_2022-6-29.gz
+    │   │   ├── 1_lista_img_camp_clar_100_resized_regressao_A5492021-11-9.gz
+    │   │   ├── 2_lista_img_camp_clar_75_resized_regressao_A5492021-11-9.gz
+    │   │   ├── 3_lista_img_camp_clar_50_resized_regressao_A5492021-11-9.gz
+    │   │   ├── 4_lista_img_camp_clar_25_resized_regressao_A5492021-11-9.gz
+    │   │   ├── 5_lista_rotulo_camp_clar_100_resized_regressao_A5492021-11-9.gz
+    │   │   ├── 6_lista_rotulo_camp_clar_75_resized_regressao_A5492021-11-9.gz
+    │   │   ├── 7_lista_rotulo_camp_clar_50_resized_regressao_A5492021-11-9.gz
+    │   │   ├── 8_lista_rotulo_camp_clar_25_resized_regressao_A5492021-11-9.gz
+    │   │   └── 9_model__A549_regressao_menor_erro_Mean_squared_error_30%_18_PACIENCE2022-6-29.h5
+    │   ├── results_Huh7
+    │   │   ├── 10_images_de_X_test_huh7_melhor_modelo_500_epochs_2022-6-30.gz
+    │   │   ├── 11_images_de_y_test_huh7_melhor_modelo_500_epochs_2022-6-30.gz
+    │   │   ├── 12_lista_img_camp_clar_100_resized_regressao_huh7_samehuh72021-10-25.gz
+    │   │   ├── 13_lista_rotulo_camp_clar_100_resized_regressao_huh7_samehuh72021-10-25.gz
+    │   │   ├── 14_model__huh7_regressao_MAIOR_erro_Mean_squared_error_500_epochs2022-6-30.h5
+    │   │   ├── 15_images_de_X_test_huh7_PIOR_modelo_500_epochs_2022-6-30.gz
+    │   │   ├── 16_images_de_y_test_huh7_PIOR_modelo_500_epochs_2022-6-30.gz
+    │   │   ├── 1_lista_img_camp_clar_100_resized_regressao_huh72021-11-9.gz
+    │   │   ├── 2_lista_img_camp_clar_75_resized_regressao_HUH72021-11-9.gz
+    │   │   ├── 3_lista_img_camp_clar_50_resized_regressao_HUH72021-11-9.gz
+    │   │   ├── 4_lista_img_camp_clar_25_resized_regressao_HUH72021-11-9.gz
+    │   │   ├── 5_lista_rotulo_camp_clar_100_resized_regressao_huh72021-11-9.gz
+    │   │   ├── 6_lista_rotulo_camp_clar_75_resized_regressao_HUH72021-11-9.gz
+    │   │   ├── 7_lista_rotulo_camp_clar_50_resized_regressao_HUH72021-11-9.gz
+    │   │   ├── 8_lista_rotulo_camp_clar_25_resized_regressao_HUH72021-11-9.gz
+    │   │   └── 9_model__huh7_regressao_menor_erro_Mean_squared_error_500_epochs2022-6-30.h5
+    │   ├── results_MAYV
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_MAYV2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_MAYV2022-10-25.gz
+    │   │   └── lista_rotulo_camp_clar_75_resized_regressao_MAYV2022-10-25.gz
+    │   ├── results_SH_SY5Y
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   │   └── lista_rotulo_camp_clar_75_resized_regressao_SH_SY5Y2022-10-25.gz
+    │   ├── results_THP1
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_THP12022-10-25.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_THP12022-10-25.gz
+    │   │   └── lista_rotulo_camp_clar_75_resized_regressao_THP12022-10-25.gz
+    │   ├── results_VERO6
+    │   │   ├── lista_img_camp_clar_100_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── lista_img_camp_clar_25_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── lista_img_camp_clar_50_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── lista_img_camp_clar_75_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── lista_rotulo_camp_clar_100_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── lista_rotulo_camp_clar_25_resized_regressao_VERO62022-10-24.gz
+    │   │   ├── lista_rotulo_camp_clar_50_resized_regressao_VERO62022-10-24.gz
+    │   │   └── lista_rotulo_camp_clar_75_resized_regressao_VERO62022-10-24.gz
+    │   └── results_mAb_DENV1
+    │       ├── lista_img_camp_clar_100_resized_regressao_mAb_DENV12022-10-25.gz
+    │       ├── lista_img_camp_clar_25_resized_regressao_mAb_DENV12022-10-25.gz
+    │       ├── lista_img_camp_clar_50_resized_regressao_mAb_DENV12022-10-25.gz
+    │       ├── lista_img_camp_clar_75_resized_regressao_mAb_DENV12022-10-25.gz
+    │       ├── lista_rotulo_camp_clar_100_resized_regressao_mAb_DENV12022-10-25.gz
+    │       ├── lista_rotulo_camp_clar_25_resized_regressao_mAb_DENV12022-10-25.gz
+    │       ├── lista_rotulo_camp_clar_50_resized_regressao_mAb_DENV12022-10-25.gz
+    │       └── lista_rotulo_camp_clar_75_resized_regressao_mAb_DENV12022-10-25.gz
+    └── teste_kernel_18_11_22.ipynb
 
-5 directories, 15 files
+30 directories, 934 files
