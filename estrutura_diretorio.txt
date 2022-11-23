@@ -785,7 +785,8 @@
     │   │   └── exp_mclf101.gz
     │   ├── exp_mclf101
     │   ├── exp_mclf101.pkl
-    │   └── logs.log
+    │   ├── logs.log
+    │   └── my_best_pipeline.pkl
     ├── results
     │   ├── Classificação_imagens_DOC_CNN
     │   │   ├── Cópia de lista_img_camp_clar_100_resized_regressao_VERO62022-10-24.gz
@@ -968,4 +969,4 @@
     │       └── lista_rotulo_camp_clar_75_resized_regressao_mAb_DENV12022-10-25.gz
     └── teste_kernel_18_11_22.ipynb
 
-30 directories, 938 files
+30 directories, 939 files
