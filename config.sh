@@ -7,7 +7,7 @@ git config --global user.user "Guilherme F Silveira"
 # Instalando o programa tree, para obtenção da estrutura de diretórios e atualizando a estrutura
 sudo apt-get update
 sudo apt-get install -y tree
-tree > estrutura_diretorio.txt
+tree > directory_structure.txt
 
 # Instalando o Docker, o docker-compose, e subindo o ambiente
 curl -fsSL http://get.docker.com | sh
