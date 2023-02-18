@@ -11,5 +11,6 @@ tree > directory_structure.txt
 
 # Instalando o Docker, o docker-compose, e subindo o ambiente
 curl -fsSL http://get.docker.com | sh
+sudo usermod -aG docker ubuntu
 sudo apt-get install -y docker-compose
 sudo docker-compose -f /home/ubuntu/env-docker/docker/docker-compose-app.yml up -d
