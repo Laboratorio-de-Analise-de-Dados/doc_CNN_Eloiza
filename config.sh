@@ -13,4 +13,4 @@ tree > directory_structure.txt
 curl -fsSL http://get.docker.com | sh
 sudo usermod -aG docker ubuntu
 sudo apt-get install -y docker-compose
-sudo docker-compose -f /home/ubuntu/env-docker/docker/docker-compose-app.yml up -d
+sudo docker-compose -f /home/ubuntu/doc_CNN_Eloiza/docker/docker-compose-app.yml up -d
